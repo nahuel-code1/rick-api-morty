@@ -14,12 +14,10 @@ export default function LocationContainer1 ({inputData}) {
             promise.then((response) => {
                 setLocationInfo(response.data);
                 setResidentsInfo(response.data.residents);
-                console.log(locationInfo);
-                console.log(residentsInfo);
             })
         }
 
-    }, [inputData])
+    }, [inputData, locationInfo, residentsInfo])
 
     return (
         <div className="loc-container">
