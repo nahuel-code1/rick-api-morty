@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import SearchBox1 from "./Components1/searchBox";
+import LocationContainer1 from "./Components1/locationContainer";
+import "./components.css";
+function App () {
+    const [inputValue, setInputValue] = useState("");
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const handleSearch = (dataInput) => {
+        setInputValue(dataInput);
+    }
+
+    return (
+        <div className="Container">
+            <h1>Rick and Morty API</h1>
+            <SearchBox1 inputMethod={handleSearch}/>
+            {inputValue && <LocationContainer1 inputData={inputValue}/>}
+        </div>
+    )
 }
 
 export default App;

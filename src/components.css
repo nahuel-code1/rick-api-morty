@@ -1,0 +1,35 @@
+.Container {
+    width: 100vw;
+    min-height: 100vh;
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F2.bp.blogspot.com%2F-qsn1GH0rSc4%2FVXjucjarBiI%2FAAAAAAAAGsg%2F1ikPLIR_oj0%2Fs1600%2Fespacio%252Bexterior%252B1.jpg&f=1&nofb=1");
+    background-position: center;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.loc-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.locationInfo-container {
+width: 80%;
+}
+
+.bg-black {
+    background-color: black;
+}
